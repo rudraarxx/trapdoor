@@ -1,0 +1,50 @@
+@import url("../style.css");
+
+.hero-page{
+    height: 100vh;
+}
+.hero-page .hero-title{
+    width: 100%;
+    height: 50%;
+    background-image: url("../contact-us/assets/bg.jpg");
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.hero-page .hero-title .layer .heading{
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: #fff;
+    border: #fff solid 2px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 5px 7px;
+}
+.hero-page .hero-body .hero-content{
+    text-align: center;
+    margin-top: 100px;
+    color: #023047;
+}
+.hero-page .hero-body .hero-content h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 4rem;
+}
+.hero-page .hero-body .hero-content h3{
+    font-family: 'Satisfy', cursive;
+}
+.hero-page .hero-body .hero-content a{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color:#232323;
+}
+
+.service-page-1{
+    width: 100%;
+    height: 100vh;
+}
+

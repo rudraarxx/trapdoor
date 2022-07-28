@@ -1,0 +1,210 @@
+@import url("../style.css");
+@import url("../hover.css");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&family=PT+Sans&family=PT+Sans+Narrow&family=Poppins&family=Satisfy&display=swap');
+
+.hero-page{
+    height: 100vh;
+}
+.hero-page .hero-title{
+    width: 100%;
+    height: 50%;
+    background-image: url("./assets/hero-page/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-page .hero-title .layer .heading{
+    width: 230px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: #fff;
+    border: #fff solid 2px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 5px 7px;
+}
+.hero-page .hero-body .hero-content{
+    text-align: center;
+    margin-top: 100px;
+    color: #023047;
+}
+.hero-page .hero-body .hero-content h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 4rem;
+}
+.hero-page .hero-body .hero-content h3{
+    font-family: 'Satisfy', cursive;
+}
+.hero-page .hero-body .hero-content a{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color:#232323;
+}
+.first-abt-page{
+    width: 100%;
+    height: 100vh;
+}
+.first-abt-page .second-pg-left .left-content{
+    margin-top: 100px;
+    padding-left: 20px;
+}
+.first-abt-page .second-pg-left{
+    overflow: hidden;
+}
+.first-abt-page .second-pg-right{
+    margin-top: 50px !important;
+    overflow: hidden;
+}
+.second-abt-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/second-page/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.second-abt-page .second-abt-heading{
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    padding-top: 130px;
+    color: #fff;
+}
+.second-abt-page .second-abt-heading h1{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+.second-abt-page .second-abt-heading h1 span{
+    color: #219EBC;
+}
+.second-abt-page .second-abt-heading p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    padding-top: 20px;
+}
+.second-abt-page .second-abt-card{
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    
+}
+.second-abt-page .second-abt-card .card{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    /* border: none; */
+    /* transition: all 0.5s linear; */
+}
+/* .second-abt-page .second-abt-card .card:hover{
+    
+} */
+.second-abt-page .second-abt-card .card i{
+    font-size: 2rem;
+    color: #fff;
+}
+.second-abt-page .second-abt-card .card h5{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+}
+.second-abt-page .second-abt-card .card .value{
+    color: #FB8500;
+}
+.third-abt-page{
+    width: 100%;
+    height: 100vh; 
+    background-color:#232323;
+}
+.third-abt-page .third-abt-form{
+    width: 100%;
+    height: 50%;
+}
+.third-abt-page .third-abt-form .row{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    margin: 0 auto;
+    /* position: relative;
+    top: 100px; */
+}
+.third-abt-form .third-abt-left{
+    background-image: url("./assets/third-page/bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.third-abt-form .third-abt-right{
+    background-image: url("./assets/third-page/bg-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.third-abt-form .third-abt-right h3{
+    font-family: 'Open Sans', sans-serif;
+}
+.third-abt-form .third-abt-right h3 span{
+    color: #219EBC;
+}
+.third-abt-form .third-abt-right p{
+    font-family: 'Poppins', sans-serif;
+}
+.third-abt-form .third-abt-right form button{
+    font-family: 'Poppins', sans-serif;
+}
+.third-abt-page .third-abt-footer{
+    width: 100%;
+    height: 50%;
+    color: #fff;
+}
+.third-abt-page .third-abt-footer .row h3{
+    font-family: 'EB Garamond', serif;
+    /* font-weight: bold; */
+    text-transform: uppercase; 
+}
+.third-abt-page .third-abt-footer  .row .social-link h3 span{
+    color: #219EBC;
+}
+.third-abt-page .third-abt-footer  .row .social-link p{
+    font-family: 'PT Sans', sans-serif;
+    color: #cdcdcd;
+}
+.third-abt-page .third-abt-footer  .row .social-link a{
+    text-decoration:none;
+    border: none; 
+}
+.third-abt-page .third-abt-footer  .row .useful-link h4{
+    font-family: 'Open Sans', sans-serif;
+}
+.third-abt-page .third-abt-footer  .row .useful-link a{
+    text-decoration:none;
+    color: #cdcdcd;
+    font-size: 1.1rem;
+    line-height: 30px;
+    font-family: 'PT Sans', sans-serif;
+}
+.third-abt-page .third-abt-footer  .row .useful-link a:hover{
+    color: #219EBC;
+}
+.third-abt-page .third-abt-footer  .row .contact-data h4{
+    font-family: 'Open Sans', sans-serif;
+}
+.third-abt-page .third-abt-footer  .row .contact-data dl dt{
+    color: #219EBC;
+    font-family: 'Open Sans', sans-serif;
+}
+.third-abt-page .third-abt-footer  .row .contact-data dl dd{
+    color: #cdcdcd;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+
+
+
