@@ -1,8 +1,209 @@
 @import url("../style.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 .hero-page{
     height: 100vh;
 }
+.hero-page .nav-top{
+  width: 100%;
+  height: 30px;
+  background: #232323;
+  color: #cdcdcd;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+  font-family: 'PT Sans', sans-serif;
+}
+.hero-page .nav-top .top-left span{
+  color: #219EBC;
+}
+.hero-page .nav-top .top-right a{
+  color: #219EBC;
+  text-decoration: none;
+}
+
+/* navbar start*/
+.hero-page nav{
+  height: 4.4rem;
+  width: 100%;
+  background-color: transparent;
+  /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
+  position: absolute;
+  display: flex;
+  z-index: 999;
+}
+
+/*Styling logo*/
+.hero-page .logo{
+  padding:1vh 1vw;
+  text-align: center;
+}
+.hero-page .logo img {
+  
+  width: 120px;
+}
+
+/*Styling Links*/
+.hero-page .nav-links{
+  display: flex;
+  list-style: none; 
+  width: 100vw;
+  padding: 0 0.8vw;
+  margin-top: 10px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.hero-page .nav-links li a{
+  text-decoration: none;
+  margin: 0 0.8vw;
+  color: #cdcdcd;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+.hero-page .nav-links li a:hover {
+  color: #61DAFB;
+}
+.hero-page .nav-links li {
+  position: relative;
+  color: #cdcdcd;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #61DAFB;
+  position: absolute;
+  top: 22px;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+.hero-page .nav-links li a:hover::before{
+  width: 80%;
+}
+.hero-page .right-nav{
+  margin-left: 300px;
+  margin-right: 5px;
+}
+
+/*Styling Buttons*/
+.hero-page .login-button{
+  background-color: transparent;
+  border: #cdcdcd 1px solid;
+  border-radius: 15px;
+  padding: 0 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #cdcdcd;
+}
+.hero-page .login-button:hover {
+  color: #131418;
+  background-color: #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+.hero-page .join-button{
+  color: #131418;
+  background-color: #61DAFB;
+  border: 1.5px solid #61DAFB;
+  border-radius: 2em;
+  padding: 0 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.hero-page .join-button:hover {
+  color: #f2f5f7;
+  background-color: transparent;
+  border:1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hero-page .hamburger div{
+  width: 30px;
+  height:3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hero-page .hamburger{
+  display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+  .hero-page nav{
+      position: fixed;
+      z-index: 3;
+  }
+  .hero-page .hamburger{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .hero-page .nav-links{
+      position: fixed;
+      background: #fff;
+      color: #000 !important;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+  .hero-page .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .hero-page .nav-links li{
+      opacity: 0;
+  }
+  .hero-page .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .hero-page .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .hero-page .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .hero-page .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .hero-page .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .hero-page .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .hero-page .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  .hero-page li.fade{
+      opacity: 1 !important;
+  }
+}
+/*Animating Hamburger Icon on Click*/
+.hero-page .toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.hero-page .toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.hero-page .toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+/* navbar end */
 .hero-page .hero-title{
     width: 100%;
     height: 50%;
@@ -35,7 +236,7 @@
     font-size: 4rem;
 }
 .hero-page .hero-body .hero-content h3{
-    font-family: 'Satisfy', cursive;
+  font-family: 'PT Sans', sans-serif;
 }
 .hero-page .hero-body .hero-content a{
     font-family: 'Open Sans', sans-serif;
@@ -73,8 +274,7 @@ label, #slider {
   font-weight: 500;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  /* background: purple; */
-  color: #AAA;
+  color: #131418;
   width: auto;
   height: auto;
   padding: 20px 30px;
@@ -106,19 +306,18 @@ label:hover {
   background-color: transparent;
   position: absolute;
   border-bottom: 3px solid #00acee;
-  border-radius:5px;
   margin: 7px 10px;
   transition: transform 500ms ease-in-out 0ms;
   width: 70px;
 }
 
 [type=radio],#r1:checked ~ #slider {
-  transform: translate(-700px, 0px);
+  transform: translate(-695px, 0px);
   
 }
 
 [type=radio],#r2:checked ~ #slider {
-  transform: translate(-605px, 0px);
+  transform: translate(-597px, 0px);
   width: 130px;
 }
 
@@ -149,7 +348,9 @@ label:hover {
  }
  
  .grid-item {
-   background-color: rgb(109, 228, 188);
+   background: url("../assets/fifth-pg/slide-1.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
  }
  
  .grid-item:nth-child(8n+1),
@@ -157,7 +358,9 @@ label:hover {
  .grid-item:nth-child(8n+5),
  .grid-item:nth-child(8n+6) {
    grid-row: span 2;
-   background-color: rgb(111, 111, 228);
+   background: url("../assets/fifth-pg/slide-2.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
  }
  .footer-page{
    margin-top: 100px;

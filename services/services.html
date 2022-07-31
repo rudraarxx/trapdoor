@@ -11,54 +11,72 @@
     <link rel="stylesheet" href="../hover.css">
 </head>
 <body>
+
+  <!-- Preloader -->
   <div id="preloader">
     <div id="status">&nbsp;</div>
   </div>
-    <div class="container-fluid px-0 header fixed-top">
+
+<!-- Header -->
+<div class="container-fluid px-0 header" id="navbar">
+  <div class="nav-top">
+    <div class="top-left">
+        <p>Welcome to <span>Trapdoor</span> Services,</p>
+    </div>
+    <div class="top-right">
+        
+    </div>
+  </div>
+  <nav>
+    <div class="logo">
+        <img src="../assets/Header/Trapdoor Logo.png" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about-us/about-us.html">About us</a></li>
+        <li><a href="../explore-work/exploreWork.html">Explore work</a></li>
+        <li><a href="./services/services.html">Services</a></li>
+        <li><a href="../contact-us/contact.html">Contact Us</a></li>
+        <li class="right-nav">Client <button class="login-button" href="#">Login</button> or </li>
+        <li class=""><button class="join-button" href="#">Join</button> as Contractor</li>
+    </ul>
+</nav>
+</div>  
+
+<!-- Hero-page -->
+      <div class="container-fluid hero-page px-0">
         <div class="nav-top">
           <div class="top-left">
               <p>Welcome to <span>Trapdoor</span> Services,</p>
           </div>
           <div class="top-right">
-              <p>Client <a href="">Login</a> or Join as <a href="">Contractor</a></p>
+              
           </div>
-      </div>
-      <nav class="navbar navbar-expand-sm" id="nav">
-          <div class="container-fluid px-0">
-            <a class="navbar-brand" href="javascript:void(0)">
-              <img src="../assets/Header/Trapdoor Logo.png" width="120px" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="mynavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item hvr-bounce-to-bottom">
-                  <a class="nav-link" href="../index.html" id="link">Home</a>
-                </li>
-                <li class="nav-item hvr-bounce-to-bottom">
-                  <a class="nav-link" href="../about-us/about-us.html " id="link">About us</a>
-                </li>
-                <li class="nav-item hvr-bounce-to-bottom">
-                  <a class="nav-link" href="../explore-work/exploreWork.html" id="link">Explore Work</a>
-                </li>
-                <li class="nav-item hvr-bounce-to-bottom">
-                  <a class="nav-link" href="../services/services.html" id="link">Services</a>
-                </li>
-                <li class="nav-item hvr-bounce-to-bottom">
-                  <a class="nav-link" href="../contact-us/contact.html" id="link">Contact us</a>
-                </li>
-              </ul>
-              <!-- <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn btn-primary" type="button">Search</button>
-              </form> -->
-            </div>
+        </div>
+        <nav>
+          <div class="logo">
+              <img src="../assets/Header/Trapdoor Logo.png" alt="Logo Image">
           </div>
+          <div class="hamburger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+          <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about-us/about-us.html">About us</a></li>
+              <li><a href="../explore-work/exploreWork.html">Explore work</a></li>
+              <li><a href="./services/services.html">Services</a></li>
+              <li><a href="../contact-us/contact.html">Contact Us</a></li>
+              <li class="right-nav">Client <button class="login-button" href="#">Login</button> or </li>
+              <li class=""><button class="join-button" href="#">Join</button> as Contractor</li>
+          </ul>
       </nav>
-      </div>
-
-      <div class="container-fluid hero-page px-0">
         <div class="hero-title" data-aos="fade-down" data-aos-duration="2000">
         <div class="layer">
           <div class="heading">
@@ -150,7 +168,7 @@
 
   <div class="container-fluid footer-page px-0">
     <div class="row me-0">
-      <div class="col-lg-3 social-link pt-lg-5 ps-5">
+      <div class="col-lg-4 social-link pt-lg-5 ps-5">
         <h3><span>Trapdoor</span> Services</h3>
         <p>Lorem Ipsum is simply dummy <br>text datra of the printing and <br>typesetting industry.</p>
         <a href=""  class='fab fa-facebook-f btn rounded-pill btn-primary btn-floating' style="background: #3b5999;"></a>
@@ -158,9 +176,9 @@
         <a href=""  class='fab fa-twitter btn rounded-pill btn-primary btn-floating' style="background: #1da1f3;"></a>
         <a href=""  class='fab fa-linkedin-in btn rounded-pill btn-primary btn-floating' style="background: #1869ff;"></a>
       </div>
-      <div class="col-lg-3 useful-link pt-lg-5">
-        <h4>Useful Links</h4>
-        <ul class="pt-3 ps-0">
+      <div class="col-lg-4 useful-link pt-lg-5">
+        <h4 class="ps-3">Useful Links</h4>
+        <ul class="pt-3 ps-3">
           <li><a href="">Privacy Policy</a></li>
           <li><a href="">Help & Contact Us</a></li>
           <li><a href="">Terms of Service</a></li>
@@ -168,7 +186,7 @@
           <li><a href="">Contact Us</a></li>
         </ul>
       </div>
-      <div class="col-lg-2 contact-data pt-lg-5">
+      <div class="col-lg-4 contact-data pt-lg-5">
           <h4>Contact us</h4>
           <dl class="pt-3">
             <dt>Phone</dt>
@@ -179,7 +197,6 @@
             <dd>Andheri East, Mumbai, Maharashtra, India</dd>
           </dl>
       </div>
-      <div class="col-lg-3"></div>
     </div>
   </div>
   </div>
