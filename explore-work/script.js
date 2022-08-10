@@ -14,4 +14,6 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").style.top = "-6.3rem";
   }
-}
+};
+
+AOS.init();
