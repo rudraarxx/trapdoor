@@ -65,3 +65,42 @@ function reset() {
   document.querySelector(".name-error").innerText = "";
 }
 
+var button = document.getElementById('login-btn');
+button.onclick = function() {
+  window.location='../log-in/login.html';
+}
+var button2 = document.getElementById('login-btn2');
+button2.onclick = function() {
+  window.location='../log-in/login.html';
+}
+
+// Hamburger menu
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+const hamburger2 = document.querySelector(".hamburger2");
+const navLinks2 = document.querySelector(".nav-links2");
+const links2 = document.querySelectorAll(".nav-links2 li");
+
+hamburger2.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks2.classList.toggle("open");
+    links2.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger2.classList.toggle("toggle");
+});
