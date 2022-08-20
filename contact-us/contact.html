@@ -39,7 +39,7 @@
           <li><a href="../explore-work/exploreWork.html">Explore work</a></li>
           <li><a href="../services/services.html">Services</a></li>
           <li><a href="./contact-us/contact.html">Contact Us</a></li>
-          <li class="right-nav">Client <button class="login-button" id="login-btn" href="#">Login</button> or </li>
+          <li class="right-nav">Client <button class="login-button" id="" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Login</button> or </li>
           <li class=""><button class="join-button" href="#">Join</button> as Contractor</li>
       </ul>
   </nav>
@@ -69,7 +69,7 @@
               <li><a href="../explore-work/exploreWork.html">Explore work</a></li>
               <li><a href="../services/services.html">Services</a></li>
               <li><a href="./contact-us/contact.html">Contact Us</a></li>
-              <li class="right-nav">Client <button class="login-button" id="login-btn2" href="#">Login</button> or </li>
+              <li class="right-nav">Client <button class="login-button" id="" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Login</button> or </li>
               <li class=""><button class="join-button" href="#">Join</button> as Contractor</li>
           </ul>
       </nav>
@@ -199,6 +199,54 @@
       </div>
     </div>
     </div>
+
+    <!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog g modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h1 class="modal-title">Welcome to Trapdoor!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6 login-pg-left">
+              <img src="../log-in/assets/3094352.jpg" alt="" width="100%" height="100%">
+          </div>
+          <div class="col-lg-6 login-pg-right">
+              <div class="right-content">
+                  <h3>Log-in to view your project</h3>
+              </div>
+              <div class="login-form">
+                  <form method="post" name="loginForm" id="loginFormId" enctype="multipart/form-data">
+                      <div class="email">
+                          <label for="emailId">Email Address</label><br>
+                          <input type="text" name="email" id="emailId" placeholder="Enter your Email Address">
+                      </div>
+                      <div class="project-code">
+                          <label for="projectCodeId">Project code</label><br>
+                          <input type="text" name="projectCode" id="projectCodeId" placeholder="Enter your Project code">
+                      </div>
+                      <button class="">Submit</button>
+                  </form>
+              </div>    
+          </div>
+      </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
   
 
 

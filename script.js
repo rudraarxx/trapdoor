@@ -65,14 +65,14 @@ hamburger2.addEventListener('click', ()=>{
     hamburger2.classList.toggle("toggle");
 });
 
-var button = document.getElementById('login-btn');
-button.onclick = function() {
-  window.location='./log-in/login.html';
-}
-var button2 = document.getElementById('login-btn2');
-button2.onclick = function() {
-  window.location='./log-in/login.html';
-}
+// var button = document.getElementById('login-btn');
+// button.onclick = function() {
+//   window.location='./log-in/login.html';
+// }
+// var button2 = document.getElementById('login-btn2');
+// button2.onclick = function() {
+//   window.location='./log-in/login.html';
+// }
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)

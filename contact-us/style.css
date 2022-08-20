@@ -270,25 +270,25 @@
     font-family: 'PT Sans', sans-serif;
     font-size: 1.1rem;
 }
-  div.form {
+.page-right div.form {
     width: 95%;
     background-color: #fafafa;
     box-shadow: 5px 10px 5px #ccc;
     padding: 20px;
     
   }
-  .contact-wrapper {
+  .page-right .contact-wrapper {
     margin: auto 0;
   }
   
-  .submit-btn {
+  .page-right .submit-btn {
     float: left;
   }
   .reset-btn {
     float: right;
   }
   
-  .form-headline:after {
+  .page-right .form-headline:after {
     content: "";
     display: block;
     width: 10%;
@@ -327,21 +327,21 @@
     }
   }
   
-  h3,
+  .page-right h3,
   ul {
     margin: 0;
   }
   
-  h3 {
+  .page-right h3 {
     margin-bottom: 1rem;
   }
   
-  .form-input:focus,
+  .page-right .form-input:focus,
   textarea:focus{
     outline: 1.5px solid #219EBC;
   }
   
-  .form-input,
+  .page-right .form-input,
   textarea {
     width: 100%;
     border: 1px solid #bdbdbd;
@@ -370,19 +370,19 @@
     color: #212d31;
   }
   
-  .form {
+  .page-right .form {
     background: #fff;
   }
   
-  form {
+  .page-right form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-  form label {
+  .page-right form label {
     display: block;
   }
-  form p {
+  .page-right form p {
     margin: 0;
   }
   
@@ -390,14 +390,14 @@
     grid-column: 1 / 3;
   }
   
-  button,
+  .page-right button,
   .submit-btn,
   .form-input,
   textarea {
     padding: 1em;
   }
   
-  button, .submit-btn {
+  .page-right button, .submit-btn {
     background: transparent;
     border: 1px solid #219EBC;
     color: #219EBC;
@@ -406,8 +406,8 @@
     text-transform: uppercase;
     transition: all ease-in-out 350ms;
   }
-  button:hover, .submit-btn:hover,
-  button:focus , .submit-btn:focus{
+  .page-right button:hover, .submit-btn:hover,
+  .page-right button:focus , .submit-btn:focus{
     background: #219EBC;
     outline: 0;
     color: #eee;

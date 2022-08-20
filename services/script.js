@@ -21,14 +21,14 @@ tabContent = document.getElementsByClassName('tab-content');
 button[0].classList.add('active');
 tabContent[0].style.display = 'block';
 
-var button1 = document.getElementById('login-btn');
-button1.onclick = function() {
-  window.location='../log-in/login.html';
-}
-var button2 = document.getElementById('login-btn2');
-button2.onclick = function() {
-  window.location='../log-in/login.html';
-}
+// var button1 = document.getElementById('login-btn');
+// button1.onclick = function() {
+//   window.location='../log-in/login.html';
+// }
+// var button2 = document.getElementById('login-btn2');
+// button2.onclick = function() {
+//   window.location='../log-in/login.html';
+// }
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");

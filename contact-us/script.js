@@ -65,14 +65,14 @@ function reset() {
   document.querySelector(".name-error").innerText = "";
 }
 
-var button = document.getElementById('login-btn');
-button.onclick = function() {
-  window.location='../log-in/login.html';
-}
-var button2 = document.getElementById('login-btn2');
-button2.onclick = function() {
-  window.location='../log-in/login.html';
-}
+// var button = document.getElementById('login-btn');
+// button.onclick = function() {
+//   window.location='../log-in/login.html';
+// }
+// var button2 = document.getElementById('login-btn2');
+// button2.onclick = function() {
+//   window.location='../log-in/login.html';
+// }
 
 // Hamburger menu
 

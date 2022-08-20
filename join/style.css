@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&family=PT+Sans&family=PT+Sans+Narrow&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid #f00 !important; */
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+  
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+  }
+.header{
+    width: 100%;
+    /* height: 100px; */
+    transition: top 0.3s;
+}
+.header .nav-top{
+    width: 100%;
+    height: 30px;
+    background: #232323;
+    color: #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    font-family: 'PT Sans', sans-serif;
+}
+.header .nav-top .top-left span{
+    color: #219EBC;
+}
+.header .nav-top .top-right a{
+    color: #219EBC;
+    text-decoration: none;
+}
+
+
+/* navbar start*/
+.header nav{
+    height: 4.4rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    z-index: 999;
+}
+
+/*Styling logo*/
+.header .logo{
+    padding:1vh 1vw;
+    text-align: center;
+}
+.header .logo img {
+    
+    width: 120px;
+}
+
+/*Styling Links*/
+.header .nav-links{
+    display: flex;
+    list-style: none; 
+    width: 100vw;
+    padding: 0 0.8vw;
+    margin-top: 10px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.header .nav-links li a{
+    text-decoration: none;
+    margin: 0 0.8vw;
+    color: #131418;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.header .nav-links li a:hover {
+    color: #61DAFB;
+}
+.header .nav-links li {
+    position: relative;
+    color: #131418;
+}
+.header .nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #61DAFB;
+    position: absolute;
+    top: 22px;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.header .nav-links li a:hover::before{
+    width: 80%;
+}
+.header .right-nav{
+    margin-left: 300px;
+    margin-right: 5px;
+}
+
+/*Styling Buttons*/
+.header .login-button{
+    background-color: #131418;
+    border: #131418 1px solid;
+    border-radius: 15px;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #f2f5f7;
+}
+.header .login-button:hover {
+    color: #131418;
+    background-color: #61DAFB;
+    border: #61DAFB 1px solid;
+    transition: all ease-in-out 350ms;
+}
+.header .join-button{
+    color: #131418;
+    background-color: #61DAFB;
+    border: 1.5px solid #61DAFB;
+    border-radius: 2em;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.header .join-button:hover {
+    color: #f2f5f7;
+    background-color: #131418;
+    border:1.5px solid #131418;
+    transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.header .hamburger{
+     display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+    .header nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .header .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #fff;
+        color: #000 !important;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .header .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .header .nav-links li{
+        opacity: 0;
+    }
+    .header .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .header .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .header .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .header .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .header .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .header .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .header .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    .header li.fade{
+        opacity: 1 !important;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.header .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.header .toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.header .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/* navbar end */
