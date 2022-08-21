@@ -65,14 +65,18 @@ hamburger2.addEventListener('click', ()=>{
     hamburger2.classList.toggle("toggle");
 });
 
-// var button = document.getElementById('login-btn');
-// button.onclick = function() {
-//   window.location='./log-in/login.html';
-// }
-// var button2 = document.getElementById('login-btn2');
-// button2.onclick = function() {
-//   window.location='./log-in/login.html';
-// }
+window.onload = function () {
+  var txtPassword = document.getElementById("passwordId");
+  var txtConfirmPassword = document.getElementById("confirmPasswordId");
+  txtPassword.onchange = ConfirmPassword;
+  txtConfirmPassword.onkeyup = ConfirmPassword;
+  function ConfirmPassword() {
+      txtConfirmPassword.setCustomValidity("");
+      if (txtPassword.value != txtConfirmPassword.value) {
+          txtConfirmPassword.setCustomValidity("Passwords do not match.");
+      }
+  }
+}
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)

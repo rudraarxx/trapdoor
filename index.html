@@ -46,7 +46,7 @@
             <li><a href="./services/services.html">Services</a></li>
             <li><a href="./contact-us/contact.html">Contact Us</a></li>
             <li class="right-nav">Client <button class="login-button" data-bs-toggle="modal" data-bs-target="#myModal">Login</button> or </li>
-            <li class=""><button class="join-button" href="#">Join</button> as Contractor</li>
+            <li class=""><button class="join-button" href="#" data-bs-toggle="modal" data-bs-target="#myJoinModal">Join</button> as Contractor</li>
         </ul>
     </nav>
     </div>  
@@ -77,7 +77,7 @@
             <li><a href="./services/services.html">Services</a></li>
             <li><a href="./contact-us/contact.html">Contact Us</a></li>
             <li class="right-nav">Client <button class="login-button" id="login-btn2" data-bs-toggle="modal" data-bs-target="#myModal">Login</button> or </li>
-            <li class=""><button class="join-button" href="#">Join</button> as Contractor</li>
+            <li class=""><button class="join-button" data-bs-toggle="modal" data-bs-target="#myJoinModal">Join</button> as Contractor</li>
         </ul>
     </nav>
         <div class="swiper hero-Swiper">
@@ -319,26 +319,20 @@
            <h6>Copyright ©2021 All rights reserved | Made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by HasTech.</h6>
         </div>
     </div>
-    <!-- The Modal -->
+    <!-- Login Modal -->
 <div class="modal fade" id="myModal">
-  <div class="modal-dialog g modal-lg modal-dialog-centered">
+  <div class="modal-dialog g modal-lg modal-dialog-centered  border-0">
     <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h1 class="modal-title">Welcome to Trapdoor!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
       <!-- Modal body -->
-      <div class="modal-body">
+      <div class="modal-body pt-lg-5">
         <div class="row">
           <div class="col-lg-6 login-pg-left">
               <img src="./log-in/assets/3094352.jpg" alt="" width="100%" height="100%">
           </div>
           <div class="col-lg-6 login-pg-right">
               <div class="right-content">
-                  <h3>Log-in to view your project</h3>
+                  <h1>Welcome to Trapdoor!</h1>
+                  <p>Log-in to view your project</p>
               </div>
               <div class="login-form">
                   <form method="post" name="loginForm" id="loginFormId" enctype="multipart/form-data">
@@ -350,7 +344,7 @@
                           <label for="projectCodeId">Project code</label><br>
                           <input type="text" name="projectCode" id="projectCodeId" placeholder="Enter your Project code">
                       </div>
-                      <button class="">Submit</button>
+                      <button class="btn btn-primary">Submit</button>
                   </form>
               </div>    
           </div>
@@ -359,12 +353,70 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
 
     </div>
   </div>
 </div>
+
+    <!-- Join-us Modal -->
+    <div class="modal fade" id="myJoinModal">
+      <div class="modal-dialog g modal-lg modal-dialog-centered  border-0">
+        <div class="modal-content">
+           <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6 join-pg-left pt-lg-5">
+                  <img src="./assets/Modal/join us.jpg" alt="" width="100%" height="80%">
+              </div>
+              <div class="col-lg-6 join-pg-right">
+                  <div class="right-content">
+                      <h1>Welcome to Trapdoor!</h1>
+                      <p>Create an Account</p>
+                  </div>
+                  <div class="join-form">
+                      <form action="" method="post" name="joinForm" id="joinFormId" enctype="multipart/form-data" class="was-validated">
+                          <div class="referralCode">
+                              <label for="referralCodeId">Referral Code</label><br>
+                              <input type="text" name="referralCode" id="referralCodeId" placeholder="Enter your Referral Code">
+                          </div>
+                          <div class="contractor-name">
+                              <label for="contractorId">Contractor Name</label><br>
+                              <input type="text" name="contractorName" id="contractorId" placeholder="Enter Contractor Name" required>
+                          </div>
+                          <div class="phone">
+                            <label for="phoneId">Phone</label><br>
+                            <input type="text" name="phone" id="phoneId" placeholder="Enter Phone Number" pattern="^[789]\d{9}$" required>
+                        </div>
+                        <div class="password">
+                          <label for="passwordId">Password</label><br>
+                          <input type="password" name="password" id="passwordId" placeholder="Enter Password" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"  required>
+                        </div>
+                        <div class="confirmPassword">
+                          <label for="confirmPasswordId">Confirm Password</label><br>
+                          <input type="password" name="confirmPassword" id="confirmPasswordId" placeholder="Enter Confirm Password" required>
+                        </div>
+                        <p class="term-condition">
+                          <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I Agree the <span class="text-primary">Term & Conditions</span>.
+                        </p>
+                          <button class="btn btn-primary">Submit</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                      </form>
+                  </div>    
+              </div>
+          </div>
+          </div>
+    
+          <!-- Modal footer
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div> -->
+    
+        </div>
+      </div>
+    </div>
+    
     
 
 

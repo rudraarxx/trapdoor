@@ -712,7 +712,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 .forth-pg .content-box .box:hover .box1-body::before,
 .forth-pg .content-box .box:focus .box1-body::before{
@@ -747,7 +747,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 .forth-pg .content-box .box:hover .box2-body::before,
 .forth-pg .content-box .box:focus .box2-body::before{
@@ -782,7 +782,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 .forth-pg .content-box .box:hover .box3-body::before,
 .forth-pg .content-box .box:focus .box3-body::before{
@@ -986,13 +986,13 @@
 .login-pg-right{
     padding: 20px;
 }
-.modal-header h1{
-    font-family: 'EB Garamond', serif !important;
-    font-size: 3rem;
+.login-pg-right .right-content h1{
+    font-family: 'EB Garamond', serif;
+    /* font-size: 3rem; */
 }
 .login-pg-right .right-content p{
     font-family: 'Poppins', serif;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     padding-left: 5px;
     line-height: 10px;
 }
@@ -1016,8 +1016,8 @@
 }
 .login-pg-right .login-form input:focus{
     outline: none;
-    border-color: #219EBC;
-    box-shadow: 0 0 10px #219EBC;
+    border-color: #3120E0;
+    box-shadow: 0 0 10px #3120E0;
 }
 .login-pg-right .login-form input::placeholder{
     font-family: 'Poppins', serif;
@@ -1028,10 +1028,75 @@
     margin-top: 20px;
     font-family: 'Poppins', serif;
     color: white;
-    background: #219EBC;
     border: none;
     border-radius: 15px;
 }
+.modal-footer button{
+    padding: 5px 10px;
+    font-family: 'Poppins', serif;
+    border-radius: 15px;
+}
+
+/* Join Modal */
+
+.join-pg-right .right-content h1{
+    font-family: 'EB Garamond', serif;
+}
+.join-pg-right .right-content p{
+    font-family: 'Poppins', serif;
+    padding-left: 5px;
+    line-height: 10px;
+}
+.join-pg-right .join-form .contractor-name label::after,
+.join-pg-right .join-form .phone label::after,
+.join-pg-right .join-form .password label::after,
+.join-pg-right .join-form .confirmPassword label::after
+{
+    content: "*";
+    color: red;
+}
+.join-pg-right .join-form label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.join-pg-right .join-form input{
+    width: 80%;
+    padding: 7px;
+    margin: 5px 0;
+    font-family: 'Poppins', serif;
+    font-size: 0.90rem;
+    border: 1px solid #DBD8E3;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.join-pg-right .join-form input:focus{
+    outline: none;
+    border-color: #3120E0;
+    box-shadow: 0 0 10px #3120E0;
+} 
+.join-pg-right .join-form input::placeholder{
+    font-family: 'Poppins', serif;
+    font-size: 0.90rem;
+}
+.join-pg-right .join-form button{
+    padding: 5px 10px;
+    font-family: 'Poppins', serif;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.join-pg-right .term-condition input{
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.join-pg-right .term-condition input:focus{
+    border-color: none;
+    box-shadow: none;
+}
+
+
+
 
 
 
